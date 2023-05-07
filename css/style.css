@@ -63,58 +63,7 @@ p.psub{
     background-color: #dc4f72;
    }
 /* HEADER */
-header{
-    position: fixed;
-    /* top: 0; */
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    background-color: white;
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-}
-.header .header__nav .header__nav__content .header__logo{
-    font-size: 30px;
-    font-weight: 600;
-    color:#dc4f72 ;
-}
-.header .header__nav .header__nav__content ul li a.active{
-    color:#dc4f72 ;
-}
-.header .header__nav .header__nav__content ul li{
-    padding: 0 20px;
-}
-.header .header__nav .header__nav__content ul li a:hover{
-    color:#dc4f72 ;
-}
-.header .header__nav .header__nav__content ul li a{
-    position: relative;
-}
-.header .header__nav .header__nav__content ul li a::before{
-    content: "";
-    position: absolute;
-    width: 0%;
-    height:2px;
-    bottom: 0;
-    background-color: #dc4f72;
-    transition: all 1s;
-}
-.header .header__nav .header__nav__content ul li a:hover::before{
-   
-    width: 50%;
-}
-.header .header__nav .header__nav__content .header__find a {
-    color:#dc4f72 ;
-}
-.header .header__nav .header__nav__content .header__btn a {
-    color:#dc4f72 ;
-    border:1px solid #dc4f72 ;
-    transition: all 1s;
-}
-.header .header__nav .header__nav__content .header__btn a:hover {
-    color: white;
-    border:1px solid #dc4f72 ;
-    background-color: #dc4f72
-}
+
 /* POSTER */
 .poster{    
     background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url("/img/banner.jpg");

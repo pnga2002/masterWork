@@ -23,12 +23,62 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
 
 </head>
 
 <body>
+    <section class="w3l-top-header">
+		<div class="container-fluid TopHeader">
+			<div class="top-content-w3ls d-flex align-items-center justify-content-between">
+
+								
+				<div class="top-headers HeaderLeftInfo">
+
+					<ul>
+
+																		<li>
+							<a href="contact" class="d-sm-block d-none">Have any question ?</a>
+						</li>
+						
+																		<li>
+							<i class="fa fa-phone"></i><a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+						</li>
+						
+																		<li>
+							<i class="fa fa-envelope"></i><a href="mailto:mail@example.com">mail@example.com</a>
+						</li>
+						
+					</ul>
+
+				</div>
+				
+												<div class="top-headers top-headers-2 SocialIcons">
+					<ul>
+																		<li>
+							<a href="https://facebook.com/w3layouts"><span class="fa fa-facebook"></span></a>
+						</li>
+						
+																		<li>
+							<a href="https://twitter.com/w3layouts"><span class="fa fa-twitter"></span></a>
+						</li>
+						
+																		<li>
+							<a href="https://instagram.com/w3layouts"><span class="fa fa-instagram"></span></a>
+						</li>
+						
+																		<li class="mr-0">
+							<a href="https://Linkedin.com/w3layouts"><span class="fa fa-linkedin"></span></a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</section>
     <!-- header -->
-    <header>
+    <header id="site-header">
         <div class="header">
             <div class="container">
                 <nav class="header__nav navbar navbar-expand-lg bg-body-tertiary py-3">
@@ -625,6 +675,19 @@
             }
         })
     </script>
+    <!-- menu js -->
+    <script>
+        $(window).on("scroll", function () {
+          var scroll = $(window).scrollTop();
+      
+          if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+          } else {
+            $("#site-header").removeClass("nav-fixed");
+          }
+        });
+      
+      </script>
 </body>
 
 </html>
